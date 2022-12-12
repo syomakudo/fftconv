@@ -1,0 +1,6 @@
+INFO:trainer:FFT_CNNEx | mnist
+INFO:trainer:in_size : 256 | epochs : 30 | batch : 1
+INFO:trainer:kernel_l1 : 129 | kernel_l2 : 65 | kernel_l3 : 33 
+INFO:trainer:o_channels_l1 : 4 | o_channels_l2 : 4 | o_channels_l3 : 4 
+INFO:trainer:learn_num_train : 0 | learn_num_validate : 0 
+INFO:trainer::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::

@@ -1,0 +1,50 @@
+INFO:trainer_layer_backward:CNNEx | mnist
+INFO:trainer_layer_backward:in_size : 1024 | epochs : 1 | batch : 1
+INFO:trainer_layer_backward:kernel_l1 : 513 | 
+INFO:trainer_layer_backward:o_channels_l1 : 20 | 
+INFO:trainer_layer_backward:learn_num_train : 50 | learn_num_validate : 0 
+INFO:trainer_layer_backward::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+INFO:trainer_layer_backward:message : conv1 
+INFO:trainer_layer_backward::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+INFO:trainer_layer_backward:Ave_Time : 15206.22770190239
+INFO:trainer_layer_backward::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+INFO:trainer_layer_backward:15116.738319396973
+INFO:trainer_layer_backward:15108.360528945923
+INFO:trainer_layer_backward:15086.942195892334
+INFO:trainer_layer_backward:15077.497720718384
+INFO:trainer_layer_backward:15100.685119628906
+INFO:trainer_layer_backward:15125.324964523315
+INFO:trainer_layer_backward:15120.447874069214
+INFO:trainer_layer_backward:15151.402235031128
+INFO:trainer_layer_backward:15086.901664733887
+INFO:trainer_layer_backward:15108.72769355774
+INFO:trainer_layer_backward:15093.436002731323
+INFO:trainer_layer_backward:15068.88222694397
+INFO:trainer_layer_backward:15106.444597244263
+INFO:trainer_layer_backward:15260.38646697998
+INFO:trainer_layer_backward:15056.578874588013
+INFO:trainer_layer_backward:15325.395345687866
+INFO:trainer_layer_backward:15166.727542877197
+INFO:trainer_layer_backward:15092.334508895874
+INFO:trainer_layer_backward:15297.463655471802
+INFO:trainer_layer_backward:15479.857921600342
+INFO:trainer_layer_backward:15634.937286376953
+INFO:trainer_layer_backward:15136.521100997925
+INFO:trainer_layer_backward:15367.658376693726
+INFO:trainer_layer_backward:15321.928262710571
+INFO:trainer_layer_backward:15249.353885650635
+INFO:trainer_layer_backward:15141.985654830933
+INFO:trainer_layer_backward:15099.620580673218
+INFO:trainer_layer_backward:15117.711305618286
+INFO:trainer_layer_backward:15091.484308242798
+INFO:trainer_layer_backward:15249.420881271362
+INFO:trainer_layer_backward:15454.552412033081
+INFO:trainer_layer_backward:15178.568840026855
+INFO:trainer_layer_backward:15210.671424865723
+INFO:trainer_layer_backward:15296.839952468872
+INFO:trainer_layer_backward:15228.474855422974
+INFO:trainer_layer_backward:15169.963836669922
+INFO:trainer_layer_backward:15302.001476287842
+INFO:trainer_layer_backward:15293.830394744873
+INFO:trainer_layer_backward:15441.725969314575
+INFO:trainer_layer_backward:15231.321811676025

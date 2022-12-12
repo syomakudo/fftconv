@@ -1,0 +1,49 @@
+INFO:trainer_layer_forward:CNNEx | mnist
+INFO:trainer_layer_forward:in_size : 1024 | epochs : 1 | batch : 1
+INFO:trainer_layer_forward:kernel_l1 : 513 | kernel_l2 : 257 | kernel_l3 : 129 
+INFO:trainer_layer_forward:o_channels_l1 : 5 | o_channels_l2 : 5 | o_channels_l3 : 5 
+INFO:trainer_layer_forward::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+INFO:trainer_layer_forward:message : cnn_all_layer 
+INFO:trainer_layer_forward::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+INFO:trainer_layer_forward:Ave_Time : 1467.7831709384918
+INFO:trainer_layer_forward::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+INFO:trainer_layer_forward:1451.371431350708
+INFO:trainer_layer_forward:1460.522174835205
+INFO:trainer_layer_forward:1458.759069442749
+INFO:trainer_layer_forward:1459.6965312957764
+INFO:trainer_layer_forward:1460.8416557312012
+INFO:trainer_layer_forward:1465.7175540924072
+INFO:trainer_layer_forward:1464.9314880371094
+INFO:trainer_layer_forward:1458.7936401367188
+INFO:trainer_layer_forward:1460.5138301849365
+INFO:trainer_layer_forward:1461.5402221679688
+INFO:trainer_layer_forward:1466.6972160339355
+INFO:trainer_layer_forward:1460.9005451202393
+INFO:trainer_layer_forward:1468.3277606964111
+INFO:trainer_layer_forward:1464.8597240447998
+INFO:trainer_layer_forward:1467.6775932312012
+INFO:trainer_layer_forward:1470.7887172698975
+INFO:trainer_layer_forward:1462.62788772583
+INFO:trainer_layer_forward:1469.444751739502
+INFO:trainer_layer_forward:1469.6261882781982
+INFO:trainer_layer_forward:1467.4315452575684
+INFO:trainer_layer_forward:1471.4202880859375
+INFO:trainer_layer_forward:1471.2872505187988
+INFO:trainer_layer_forward:1466.9747352600098
+INFO:trainer_layer_forward:1470.6528186798096
+INFO:trainer_layer_forward:1467.8781032562256
+INFO:trainer_layer_forward:1468.653678894043
+INFO:trainer_layer_forward:1467.7705764770508
+INFO:trainer_layer_forward:1470.7815647125244
+INFO:trainer_layer_forward:1470.7667827606201
+INFO:trainer_layer_forward:1470.5355167388916
+INFO:trainer_layer_forward:1475.5346775054932
+INFO:trainer_layer_forward:1472.1970558166504
+INFO:trainer_layer_forward:1473.9179611206055
+INFO:trainer_layer_forward:1472.8491306304932
+INFO:trainer_layer_forward:1470.8056449890137
+INFO:trainer_layer_forward:1469.7883129119873
+INFO:trainer_layer_forward:1472.5944995880127
+INFO:trainer_layer_forward:1481.7442893981934
+INFO:trainer_layer_forward:1475.8074283599854
+INFO:trainer_layer_forward:1478.2969951629639

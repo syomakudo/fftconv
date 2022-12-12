@@ -1,0 +1,5 @@
+INFO:Classification:kernel_l1 : 65 | kernel_l2 : 33 | kernel_l3 : 17 | 
+INFO:Classification:Epoch 1/30 | Train/Loss 1.406 Acc 0.881 | Val/Loss 0.472 Acc 94.060 Time 541.16s
+INFO:Classification:Epoch 2/30 | Train/Loss 0.232 Acc 0.949 | Val/Loss 0.205 Acc 95.780 Time 546.00s
+INFO:Classification:Epoch 3/30 | Train/Loss 0.168 Acc 0.960 | Val/Loss 0.103 Acc 97.440 Time 541.48s
+INFO:Classification:Epoch 4/30 | Train/Loss 0.124 Acc 0.967 | Val/Loss 0.106 Acc 97.570 Time 537.44s

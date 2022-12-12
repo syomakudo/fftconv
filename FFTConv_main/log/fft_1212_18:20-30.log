@@ -1,0 +1,9 @@
+INFO:trainer:FFT_CNNEx | mnist
+INFO:trainer:in_size : 1024 | epochs : 1 | batch : 1
+INFO:trainer:kernel_l1 : 513 | kernel_l2 : 257 | kernel_l3 : 129 
+INFO:trainer:o_channels_l1 : 4 | o_channels_l2 : 4 | o_channels_l3 : 4 
+INFO:trainer:learn_num_train : 1000 | learn_num_validate : 200 
+INFO:trainer::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+INFO:trainer:Epoch 1/1 | Train/Loss 94.692 Acc 0.385 | Val/Loss 29.728 Acc 36.500 Time 81.03 s
+INFO:trainer:Best validation accuracy:36.500%
+INFO:trainer:Average_Time 81.03 s

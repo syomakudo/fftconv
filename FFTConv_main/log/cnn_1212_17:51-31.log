@@ -1,0 +1,8 @@
+INFO:trainer:CNNEx | mnist
+INFO:trainer:in_size : 1024 | epochs : 1 | batch : 1
+INFO:trainer:kernel_l1 : 513 | kernel_l2 : 257 | kernel_l3 : 129 
+INFO:trainer:o_channels_l1 : 5 | o_channels_l2 : 5 | o_channels_l3 : 5 
+INFO:trainer:learn_num_train : 1000 | learn_num_validate : 200 
+INFO:trainer::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+INFO:trainer:message : conv1 
+INFO:trainer::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::

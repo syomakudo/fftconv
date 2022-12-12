@@ -1,0 +1,7 @@
+cuda11.1-cudnn8-ubuntu18.04
+GeForce RTX 3070
+
+Python 3.7.0
+
+FFT-Conv(githubにてインストールする必要がある)
+https://github.com/fkodom/fft-conv-pytorch

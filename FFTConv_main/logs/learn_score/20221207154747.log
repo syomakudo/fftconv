@@ -1,0 +1,33 @@
+INFO:Classification:kernel_l1 : 65 | kernel_l2 : 33 | kernel_l3 : 17 | 
+INFO:Classification:Epoch 1/30 | Train/Loss 6.086 Acc 0.685 | Val/Loss 4.113 Acc 75.950 Time 72.09s
+INFO:Classification:Epoch 2/30 | Train/Loss 2.014 Acc 0.813 | Val/Loss 1.465 Acc 83.088 Time 72.76s
+INFO:Classification:Epoch 3/30 | Train/Loss 1.266 Acc 0.858 | Val/Loss 1.382 Acc 87.898 Time 72.21s
+INFO:Classification:Epoch 4/30 | Train/Loss 1.094 Acc 0.882 | Val/Loss 0.830 Acc 92.126 Time 72.09s
+INFO:Classification:Epoch 5/30 | Train/Loss 0.540 Acc 0.915 | Val/Loss 0.438 Acc 92.279 Time 72.71s
+INFO:Classification:Epoch 6/30 | Train/Loss 0.359 Acc 0.932 | Val/Loss 0.279 Acc 94.516 Time 72.38s
+INFO:Classification:Epoch 7/30 | Train/Loss 0.433 Acc 0.928 | Val/Loss 0.305 Acc 94.087 Time 71.54s
+INFO:Classification:Epoch 8/30 | Train/Loss 0.257 Acc 0.946 | Val/Loss 0.300 Acc 93.995 Time 71.01s
+INFO:Classification:Epoch 9/30 | Train/Loss 0.657 Acc 0.913 | Val/Loss 0.454 Acc 93.566 Time 71.64s
+INFO:Classification:Epoch 10/30 | Train/Loss 0.406 Acc 0.931 | Val/Loss 0.584 Acc 87.714 Time 71.66s
+INFO:Classification:Epoch 11/30 | Train/Loss 0.263 Acc 0.953 | Val/Loss 0.248 Acc 95.312 Time 71.56s
+INFO:Classification:Epoch 12/30 | Train/Loss 0.223 Acc 0.952 | Val/Loss 0.280 Acc 95.343 Time 71.64s
+INFO:Classification:Epoch 13/30 | Train/Loss 0.214 Acc 0.955 | Val/Loss 0.167 Acc 96.477 Time 71.80s
+INFO:Classification:Epoch 14/30 | Train/Loss 0.205 Acc 0.954 | Val/Loss 0.151 Acc 96.201 Time 71.40s
+INFO:Classification:Epoch 15/30 | Train/Loss 0.166 Acc 0.962 | Val/Loss 0.181 Acc 95.833 Time 71.40s
+INFO:Classification:Epoch 16/30 | Train/Loss 0.151 Acc 0.957 | Val/Loss 0.140 Acc 96.385 Time 71.17s
+INFO:Classification:Epoch 17/30 | Train/Loss 0.169 Acc 0.958 | Val/Loss 0.177 Acc 95.466 Time 72.77s
+INFO:Classification:Epoch 18/30 | Train/Loss 0.143 Acc 0.963 | Val/Loss 0.125 Acc 96.752 Time 71.84s
+INFO:Classification:Epoch 19/30 | Train/Loss 0.125 Acc 0.965 | Val/Loss 0.146 Acc 96.109 Time 72.25s
+INFO:Classification:Epoch 20/30 | Train/Loss 0.172 Acc 0.957 | Val/Loss 0.217 Acc 94.455 Time 71.78s
+INFO:Classification:Epoch 21/30 | Train/Loss 0.140 Acc 0.965 | Val/Loss 0.151 Acc 96.507 Time 70.75s
+INFO:Classification:Epoch 22/30 | Train/Loss 0.153 Acc 0.960 | Val/Loss 0.205 Acc 96.109 Time 72.12s
+INFO:Classification:Epoch 23/30 | Train/Loss 0.328 Acc 0.938 | Val/Loss 0.483 Acc 91.452 Time 72.03s
+INFO:Classification:Epoch 24/30 | Train/Loss 0.240 Acc 0.948 | Val/Loss 0.205 Acc 95.190 Time 71.81s
+INFO:Classification:Epoch 25/30 | Train/Loss 0.144 Acc 0.962 | Val/Loss 0.149 Acc 96.048 Time 70.76s
+INFO:Classification:Epoch 26/30 | Train/Loss 0.138 Acc 0.965 | Val/Loss 0.138 Acc 96.017 Time 71.30s
+INFO:Classification:Epoch 27/30 | Train/Loss 0.124 Acc 0.967 | Val/Loss 0.121 Acc 96.844 Time 72.29s
+INFO:Classification:Epoch 28/30 | Train/Loss 0.105 Acc 0.971 | Val/Loss 0.124 Acc 96.477 Time 71.67s
+INFO:Classification:Epoch 29/30 | Train/Loss 0.107 Acc 0.970 | Val/Loss 0.133 Acc 96.507 Time 70.45s
+INFO:Classification:Epoch 30/30 | Train/Loss 0.117 Acc 0.964 | Val/Loss 0.211 Acc 95.527 Time 70.44s
+INFO:Classification:Best validation accuracy:96.844%
+INFO:Classification:Average_Time 71.71s
