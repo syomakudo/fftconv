@@ -1,0 +1,50 @@
+INFO:trainer_layer_forward:CNNEx | mnist
+INFO:trainer_layer_forward:in_size : 1024 | epochs : 1 | batch : 1
+INFO:trainer_layer_forward:kernel_l1 : 513 | 
+INFO:trainer_layer_forward:o_channels_l1 : 20 | 
+INFO:trainer_layer_forward:learn_num_train : 50 | learn_num_validate : 0 
+INFO:trainer_layer_forward::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+INFO:trainer_layer_forward:message : conv1 
+INFO:trainer_layer_forward::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+INFO:trainer_layer_forward:Ave_Time : 4095.3272104263306
+INFO:trainer_layer_forward::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+INFO:trainer_layer_forward:3998.079299926758
+INFO:trainer_layer_forward:3991.2359714508057
+INFO:trainer_layer_forward:4138.625860214233
+INFO:trainer_layer_forward:4220.952749252319
+INFO:trainer_layer_forward:4204.747676849365
+INFO:trainer_layer_forward:4031.719207763672
+INFO:trainer_layer_forward:4020.172119140625
+INFO:trainer_layer_forward:4020.1778411865234
+INFO:trainer_layer_forward:4088.589906692505
+INFO:trainer_layer_forward:4035.6075763702393
+INFO:trainer_layer_forward:4057.933568954468
+INFO:trainer_layer_forward:4027.130603790283
+INFO:trainer_layer_forward:4063.783645629883
+INFO:trainer_layer_forward:4021.4147567749023
+INFO:trainer_layer_forward:4045.4132556915283
+INFO:trainer_layer_forward:4027.3540019989014
+INFO:trainer_layer_forward:4228.311538696289
+INFO:trainer_layer_forward:4147.000074386597
+INFO:trainer_layer_forward:4231.54354095459
+INFO:trainer_layer_forward:4220.95799446106
+INFO:trainer_layer_forward:4070.972442626953
+INFO:trainer_layer_forward:4033.8969230651855
+INFO:trainer_layer_forward:4037.165403366089
+INFO:trainer_layer_forward:4027.9040336608887
+INFO:trainer_layer_forward:4024.1363048553467
+INFO:trainer_layer_forward:4038.6669635772705
+INFO:trainer_layer_forward:4259.3231201171875
+INFO:trainer_layer_forward:4320.741176605225
+INFO:trainer_layer_forward:4121.267795562744
+INFO:trainer_layer_forward:4031.477451324463
+INFO:trainer_layer_forward:4035.8500480651855
+INFO:trainer_layer_forward:4063.3468627929688
+INFO:trainer_layer_forward:4094.52486038208
+INFO:trainer_layer_forward:4186.336278915405
+INFO:trainer_layer_forward:4209.637641906738
+INFO:trainer_layer_forward:4050.351619720459
+INFO:trainer_layer_forward:4049.1390228271484
+INFO:trainer_layer_forward:4020.9128856658936
+INFO:trainer_layer_forward:4209.515333175659
+INFO:trainer_layer_forward:4107.171058654785

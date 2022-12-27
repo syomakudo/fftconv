@@ -1,0 +1,50 @@
+INFO:trainer_layer_forward:CNNEx | mnist
+INFO:trainer_layer_forward:in_size : 1024 | epochs : 1 | batch : 1
+INFO:trainer_layer_forward:kernel_l1 : 513 | 
+INFO:trainer_layer_forward:o_channels_l1 : 20 | 
+INFO:trainer_layer_forward:learn_num_train : 50 | learn_num_validate : 0 
+INFO:trainer_layer_forward::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+INFO:trainer_layer_forward:message : conv1 
+INFO:trainer_layer_forward::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+INFO:trainer_layer_forward:Ave_Time : 4048.727172613144
+INFO:trainer_layer_forward::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+INFO:trainer_layer_forward:4032.3288440704346
+INFO:trainer_layer_forward:4033.6008071899414
+INFO:trainer_layer_forward:4033.1151485443115
+INFO:trainer_layer_forward:4037.4317169189453
+INFO:trainer_layer_forward:4039.328098297119
+INFO:trainer_layer_forward:4041.3455963134766
+INFO:trainer_layer_forward:4057.2404861450195
+INFO:trainer_layer_forward:4042.973756790161
+INFO:trainer_layer_forward:4042.7865982055664
+INFO:trainer_layer_forward:4119.783878326416
+INFO:trainer_layer_forward:4109.1063022613525
+INFO:trainer_layer_forward:4042.300224304199
+INFO:trainer_layer_forward:4041.9180393218994
+INFO:trainer_layer_forward:4042.6363945007324
+INFO:trainer_layer_forward:4059.4561100006104
+INFO:trainer_layer_forward:4052.2360801696777
+INFO:trainer_layer_forward:4049.006223678589
+INFO:trainer_layer_forward:4037.311792373657
+INFO:trainer_layer_forward:4020.081043243408
+INFO:trainer_layer_forward:4054.5618534088135
+INFO:trainer_layer_forward:4043.907642364502
+INFO:trainer_layer_forward:4050.72283744812
+INFO:trainer_layer_forward:4050.85825920105
+INFO:trainer_layer_forward:4048.4867095947266
+INFO:trainer_layer_forward:4038.856029510498
+INFO:trainer_layer_forward:4042.4957275390625
+INFO:trainer_layer_forward:4035.299301147461
+INFO:trainer_layer_forward:4058.3221912384033
+INFO:trainer_layer_forward:4054.7733306884766
+INFO:trainer_layer_forward:4039.0567779541016
+INFO:trainer_layer_forward:4036.01336479187
+INFO:trainer_layer_forward:4052.107810974121
+INFO:trainer_layer_forward:4058.9606761932373
+INFO:trainer_layer_forward:4054.4869899749756
+INFO:trainer_layer_forward:4047.3172664642334
+INFO:trainer_layer_forward:4059.1506958007812
+INFO:trainer_layer_forward:4053.463935852051
+INFO:trainer_layer_forward:4048.279047012329
+INFO:trainer_layer_forward:4037.3778343200684
+INFO:trainer_layer_forward:4050.6014823913574

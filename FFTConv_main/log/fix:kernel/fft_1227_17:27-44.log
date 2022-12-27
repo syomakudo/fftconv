@@ -1,0 +1,40 @@
+INFO:trainer:FFT_CNNEx | mnist
+INFO:trainer:in_size : 256 | epochs : 30 | batch : 8
+INFO:trainer:kernel_l1 : 145 | kernel_l2 : 65 | kernel_l3 : 33 
+INFO:trainer:o_channels_l1 : 10 | o_channels_l2 : 10 | o_channels_l3 : 10 
+INFO:trainer:learn_num_train : 1000 | learn_num_validate : 1000 
+INFO:trainer::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+INFO:trainer:message : FFT_conv1 
+INFO:trainer::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+INFO:trainer:Epoch 1/30 | Train/Loss 1.436 Acc 0.774 | Val/Loss 0.441 Acc 89.075 Time 47.99 s
+INFO:trainer:Epoch 2/30 | Train/Loss 0.400 Acc 0.891 | Val/Loss 0.251 Acc 92.475 Time 46.43 s
+INFO:trainer:Epoch 3/30 | Train/Loss 0.306 Acc 0.914 | Val/Loss 0.322 Acc 91.100 Time 46.73 s
+INFO:trainer:Epoch 4/30 | Train/Loss 0.268 Acc 0.920 | Val/Loss 0.224 Acc 93.137 Time 46.36 s
+INFO:trainer:Epoch 5/30 | Train/Loss 0.225 Acc 0.932 | Val/Loss 0.215 Acc 93.888 Time 46.42 s
+INFO:trainer:Epoch 6/30 | Train/Loss 0.259 Acc 0.925 | Val/Loss 0.203 Acc 93.950 Time 46.28 s
+INFO:trainer:Epoch 7/30 | Train/Loss 0.215 Acc 0.936 | Val/Loss 0.196 Acc 93.950 Time 46.39 s
+INFO:trainer:Epoch 8/30 | Train/Loss 0.220 Acc 0.936 | Val/Loss 0.203 Acc 94.188 Time 46.34 s
+INFO:trainer:Epoch 9/30 | Train/Loss 0.213 Acc 0.938 | Val/Loss 0.174 Acc 94.925 Time 46.37 s
+INFO:trainer:Epoch 10/30 | Train/Loss 0.187 Acc 0.948 | Val/Loss 0.164 Acc 95.100 Time 46.22 s
+INFO:trainer:Epoch 11/30 | Train/Loss 0.184 Acc 0.947 | Val/Loss 0.142 Acc 95.862 Time 45.90 s
+INFO:trainer:Epoch 12/30 | Train/Loss 0.169 Acc 0.951 | Val/Loss 0.140 Acc 96.075 Time 46.02 s
+INFO:trainer:Epoch 13/30 | Train/Loss 0.162 Acc 0.954 | Val/Loss 0.180 Acc 94.612 Time 46.14 s
+INFO:trainer:Epoch 14/30 | Train/Loss 0.160 Acc 0.953 | Val/Loss 0.142 Acc 95.750 Time 46.01 s
+INFO:trainer:Epoch 15/30 | Train/Loss 0.143 Acc 0.959 | Val/Loss 0.145 Acc 95.788 Time 45.96 s
+INFO:trainer:Epoch 16/30 | Train/Loss 0.143 Acc 0.957 | Val/Loss 0.171 Acc 95.163 Time 46.54 s
+INFO:trainer:Epoch 17/30 | Train/Loss 0.149 Acc 0.955 | Val/Loss 0.126 Acc 96.138 Time 46.45 s
+INFO:trainer:Epoch 18/30 | Train/Loss 0.145 Acc 0.958 | Val/Loss 0.134 Acc 95.912 Time 46.83 s
+INFO:trainer:Epoch 19/30 | Train/Loss 0.143 Acc 0.960 | Val/Loss 0.128 Acc 96.288 Time 46.33 s
+INFO:trainer:Epoch 20/30 | Train/Loss 0.133 Acc 0.959 | Val/Loss 0.137 Acc 95.950 Time 46.50 s
+INFO:trainer:Epoch 21/30 | Train/Loss 0.125 Acc 0.965 | Val/Loss 0.120 Acc 96.562 Time 46.30 s
+INFO:trainer:Epoch 22/30 | Train/Loss 0.129 Acc 0.962 | Val/Loss 0.142 Acc 95.750 Time 46.05 s
+INFO:trainer:Epoch 23/30 | Train/Loss 0.126 Acc 0.960 | Val/Loss 0.132 Acc 96.288 Time 47.26 s
+INFO:trainer:Epoch 24/30 | Train/Loss 0.115 Acc 0.969 | Val/Loss 0.134 Acc 96.213 Time 47.30 s
+INFO:trainer:Epoch 25/30 | Train/Loss 0.118 Acc 0.968 | Val/Loss 0.131 Acc 96.325 Time 46.51 s
+INFO:trainer:Epoch 26/30 | Train/Loss 0.101 Acc 0.969 | Val/Loss 0.105 Acc 96.688 Time 46.81 s
+INFO:trainer:Epoch 27/30 | Train/Loss 0.109 Acc 0.966 | Val/Loss 0.133 Acc 96.325 Time 46.54 s
+INFO:trainer:Epoch 28/30 | Train/Loss 0.110 Acc 0.967 | Val/Loss 0.127 Acc 96.400 Time 46.54 s
+INFO:trainer:Epoch 29/30 | Train/Loss 0.112 Acc 0.969 | Val/Loss 0.131 Acc 96.375 Time 47.00 s
+INFO:trainer:Epoch 30/30 | Train/Loss 0.105 Acc 0.968 | Val/Loss 0.118 Acc 96.825 Time 47.07 s
+INFO:trainer:Best validation accuracy:96.825%
+INFO:trainer:Average_Time 46.52 s
