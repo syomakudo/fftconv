@@ -1,3 +1,10 @@
+'''
+本研究のメインのファイル
+カーネルのFFTを外した処理をここで行っている
+'''
+
+
+
 from functools import partial
 from typing import Iterable, Tuple, Union
 
@@ -6,7 +13,6 @@ import torch.nn.functional as f
 from torch import Tensor, nn
 from torch.fft import irfftn, rfftn
 
-    # output_fr = complex_matmul(signal_fr, kernel_fr, groups=groups)
 
 def complex_matmul(a: Tensor, b: Tensor, groups: int = 1) -> Tensor:
     """Multiplies two complex-valued tensors."""
@@ -27,13 +33,6 @@ def complex_matmul(a: Tensor, b: Tensor, groups: int = 1) -> Tensor:
     a = torch.movedim(a, 2, a.dim() - 1).unsqueeze(-2)
     b = torch.movedim(b, (1, 2), (b.dim() - 1, b.dim() - 2))
     
-    # print('signal_movedim : ' + str(a.size()))
-    # print('kernel_movedim : ' + str(b.size()))
-    # print('signal_real: ' + str(a.real.size()))
-    # print('signal_imag: ' + str(a.imag.size()))
-    # print('kernel_real: ' + str(b.real.size()))
-    # print('kernel_imag: ' + str(b.imag.size()))
-
     # complex value matrix multiplication
     real = a.real @ b.real - a.imag @ b.imag
     imag = a.imag @ b.real + a.real @ b.imag
@@ -177,43 +176,11 @@ def fft_conv(
     else:
         signal_ = signal
 
-    #[]
-    # print('signal_.ndim : ' + str(signal_.ndim))
-    # print('signal_.size : ' + str(signal_.size()))
-    # print('kernel.size : ' + str(kernel.size()))
-    
-    # kernel_padding = [
-    #     pad
-    #     for i in reversed(range(2, signal_.ndim)) #reversedで逆順に入れてく。signal_.ndimは4。なので3,2が入る
-    #     for pad in [0, signal_.size(i) - kernel.size(i)]
-    # ]
-    # print('kernel_padding : '+ str(kernel_padding))
-    # padded_kernel = f.pad(kernel, kernel_padding)
-
-    # print('padded_kernel : '+ str(padded_kernel.size()))
-
-    #入力画像の最大値(256,256)を読み込まれたsignal_にrfftnをかけたサイズに合わせるための調整。
-    # kernel_re = [slice(0, kernel.size(0)), slice(0, kernel.size(1))] + [
-    #     slice(0, (signal_.size(-2))) , slice(0,(signal_.size(-1) // 2 + 1))
-    # ]
-    # kernel = kernel[kernel_re].contiguous()
-    # print('re:kernel.size : ' + str(kernel.size()))
-    
-    # Perform fourier convolution -- FFT, matrix multiply, then IFFT
-    # signal_ = signal_.reshape(signal_.size(0), groups, -1, *signal_.shape[2:])
     signal_fr = rfftn(signal_, dim=tuple(range(2, signal.ndim)))
-    # print('signal_fr : '+str(signal_fr.shape))
-    # kernel_fr = rfftn(padded_kernel, dim=tuple(range(2, signal.ndim)))
-    # print('kernel_fr : '+str(kernel_fr))
 
-    # kernel_fr.imag *= -1
-    # output_fr = complex_matmul(signal_fr, padded_kernel, groups=groups)
-    # output_fr = complex_matmul(signal_fr, kernel_fr, groups=groups)
     output_fr = complex_matmul(signal_fr, kernel, groups=groups)
-    # print('output_fr : ' + str(output_fr.size()))
 
     output = irfftn(output_fr, dim=tuple(range(2, signal.ndim)))
-    # print('output_irfft : ' + str(output.size()))
 
     # 入力画像から指定したカーネルのサイズを引いたサイズになるようにトリミングする。
     crop_slices = [slice(0, output.size(0)), slice(0, output.size(1))] + [
@@ -221,24 +188,7 @@ def fft_conv(
         for i in range(2, signal.ndim)
     ]
     output = output[crop_slices].contiguous()
-    # # Version1
-    # crop_slices = [slice(0, output.size(0)), slice(0, output.size(1))] + [
-    #     slice(0, (signal.size(i) - kernel.size(i) + 1), stride_[i - 2])
-    #     for i in range(2, signal.ndim)
-    # ]
-    # output = output[crop_slices].contiguous()
-    
-    #Version2
-    # crop_slices = [slice(0, output.size(0)), slice(0, output.size(1)),
-    #     slice(0, (signal.size(2) - (kernel.size(2) // 2)), stride_[0]), #Note : 2次元で固定されてる、// 2 でカーネルのサイズで実行できないときもありそう
-    #     slice(0, (signal.size(3) - (kernel.size(3) ) + 1), stride_[1])
-    # ]
-    # output = output[crop_slices].contiguous()
 
-
-    # print('output : ' + str(output.size()))
-    # print('----------------------------------------------')
-    # Optionally, add a bias term before returning.
     if bias is not None:
         bias_shape = tuple([1, -1] + (signal.ndim - 2) * [1])
         output += bias.view(bias_shape)
@@ -306,19 +256,9 @@ class _FFTConv(nn.Module):
 
             
         # print('--------------------------------------------')
-        # print(kernel_size)
 
         self.kernel_size = to_ntuple_kernel(kernel_size, ndim) #ここで次元によってkernelの枚数を増やしてる。2次元なら○x○
-        # kernel_size = to_ntuple(kernel_size, ndim) #ここで次元によってkernelの枚数を増やしてる。2次元なら○x○
-        # kernel_size = to_ntuple_kernel(kernel_size, ndim) #ここで次元によってkernelの枚数を増やしてる。2次元なら○x○
-
-        # print(kernel_size)
-
-        # weight = torch.randn(out_channels, in_channels // groups, *kernel_size)
-        # weight = torch.randn(out_channels, in_channels // groups, *kernel_size, dtype=torch.cfloat)
-        # weight = torch.randn(out_channels, in_channels // groups, 256, 256, dtype=torch.cfloat) #Note: (256,256)は入力画像の最大
         
-        # print(self.select)
         if args.size % 2 != 0:
             re_size = args.size + 1
         else:
@@ -342,9 +282,6 @@ class _FFTConv(nn.Module):
         if self.select == 3:
             weight = torch.randn(out_channels, in_channels // groups, in_size3, (re_size // 2 + 1), dtype=torch.cfloat)
         
-        print(weight.size())
-        # print(weight[0,0])
-
         
         self.weight = nn.Parameter(weight)# parameterという役割をもたせただけ。これによりoptimizerに model.parameters()と書くだけで情報を渡せる
         self.bias = nn.Parameter(torch.randn(out_channels)) if bias else None

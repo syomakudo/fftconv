@@ -1,17 +1,22 @@
 from torch import nn
 import torch.nn.functional as F
-from fft_conv_pytorch import fft_conv,FFTConv2d
+from fft_conv_pytorch.fft_conv import fft_conv,FFTConv2d
 import torch
 from time import time
+
 
 
 class Encoder(nn.Module):
     def __init__(self, in_channels=1, h=256, dropout=0.5, args=None):
         super(Encoder, self).__init__()
 
-        self.conv1 = FFTConv2d(in_channels, args.o_channels_l1, args.kernel_l1, stride=1, padding=args.padding_l1, select=1, args=args) #65 入力サイズ128/2+1が65
-        self.conv2 = FFTConv2d(args.o_channels_l1, args.o_channels_l2, args.kernel_l2, stride=1, padding=args.padding_l2, select=2, args=args) #33 入力サイズ65/2+1が33
-        self.conv3 = FFTConv2d(args.o_channels_l2, args.o_channels_l3, args.kernel_l3, stride=1, padding=args.padding_l3, select=3, args=args) #17
+        self.conv1 = FFTConv2d(in_channels, args.o_channels_l1, args.kernel_l1, stride=1, padding=args.padding_l1) #65 入力サイズ128/2+1が65
+        self.conv2 = FFTConv2d(args.o_channels_l1, args.o_channels_l2, args.kernel_l2, stride=1, padding=args.padding_l2) #33 入力サイズ65/2+1が33
+        self.conv3 = FFTConv2d(args.o_channels_l2, args.o_channels_l3, args.kernel_l3, stride=1, padding=args.padding_l3) #17
+#K-FFT-Conv
+        # self.conv1 = FFTConv2d(in_channels, args.o_channels_l1, args.kernel_l1, stride=1, padding=args.padding_l1, select=1, args=args) #65 入力サイズ128/2+1が65
+        # self.conv2 = FFTConv2d(args.o_channels_l1, args.o_channels_l2, args.kernel_l2, stride=1, padding=args.padding_l2, select=2, args=args) #33 入力サイズ65/2+1が33
+        # self.conv3 = FFTConv2d(args.o_channels_l2, args.o_channels_l3, args.kernel_l3, stride=1, padding=args.padding_l3, select=3, args=args) #17
 
         # self.conv4 = FFTConv2d(args.o_channels_l3, args.o_channels_l4, args.kernel_l4, stride=1, padding=args.padding_l4) #17
         # self.conv5 = FFTConv2d(args.o_channels_l4, args.o_channels_l5, args.kernel_l5, stride=1, padding=args.padding_l5) #17

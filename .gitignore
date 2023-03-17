@@ -1,1 +1,3 @@
 fft-conv-pytorch
+log/pretrain_best_model.pt
+log/pretrain_checkpoint.pt

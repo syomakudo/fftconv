@@ -1,5 +1,0 @@
-INFO:trainer:FFT_CNNEx | mnist
-INFO:trainer:in_size : 128 | epochs : 30 | batch : 32
-INFO:trainer:kernel_l1 : 50 | kernel_l2 : 30 | kernel_l3 : 20 kernel_l4 : 10 | kernel_l5 : 7 
-INFO:trainer:o_channels_l1 : 20 | o_channels_l2 : 30 | o_channels_l3 : 10 o_channels_l4 : 10 | o_channels_l5 : 50 
-INFO:trainer::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::

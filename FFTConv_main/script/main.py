@@ -11,6 +11,7 @@ from torch import nn, optim
 from trainer import train_cnn
 from torchinfo import summary
 
+
 def main(args):
     # transformer setting
     if args.dataset == 'mnist' or args.dataset == 'usps':
@@ -33,7 +34,7 @@ def main(args):
         source_dataset_train, args.batch_size, shuffle=True,drop_last=True,num_workers=2)
     source_test_loader = DataLoader(
         source_dataset_test, args.batch_size, shuffle=False,num_workers=2)
-    
+        
     model = None
     if args.arch == 'CNNEx':
         model = CNNEx(in_channels=args.in_channels,args=args).to(args.device)
@@ -65,7 +66,8 @@ if __name__ == '__main__':
     parser.add_argument('--n_classes', type=int, default=10)
     parser.add_argument('--trained', type=str, default='')
     parser.add_argument('--slope', type=float, default=0.2)
-    parser.add_argument('--kernel_l1', type=int, default=111) #default=65, 129, 160
+    '''cnn'''
+    parser.add_argument('--kernel_l1', type=int, default=160) #default=65,111, 129, 145, 160
     parser.add_argument('--kernel_l2', type=int, default=65) #default=33
     parser.add_argument('--kernel_l3', type=int, default=33) #default=17
     parser.add_argument('--o_channels_l1', type=int, default=10) #default=20
@@ -77,9 +79,9 @@ if __name__ == '__main__':
     parser.add_argument('--batch_size', type=int, default=8) #32
     parser.add_argument('--test', type=bool, default=False)
     # parser.add_argument('--arch', type=str, default='FFT_CNNEx') # CNNEx or FFT_CNNEx
-    parser.add_argument('--arch', type=str, default='FFT_CNNEx')
+    parser.add_argument('--arch', type=str, default='CNNEx')
 
-    parser.add_argument('--comment', type=str, default='FFT_conv1')
+    parser.add_argument('--comment', type=str, default='パラメータ調べ')
 
     #option
     parser.add_argument('--kernel_l4', type=int, default=None)

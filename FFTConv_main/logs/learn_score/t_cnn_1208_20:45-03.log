@@ -1,8 +1,0 @@
-INFO:trainer:CNNEx | mnist
-INFO:trainer:in_size : 128 | epochs : 30 | batch : 1
-INFO:trainer:kernel_l1 : 65 | kernel_l2 : 33 | kernel_l3 : 17 
-INFO:trainer:o_channels_l1 : 5 | o_channels_l2 : 5 | o_channels_l3 : 5 
-INFO:trainer:learn_num_train : 500 | learn_num_validate : 500 
-INFO:trainer::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-INFO:trainer:Epoch 1/30 | Train/Loss 5.099 Acc 0.330 | Val/Loss 4.933 Acc 28.200 Time 4.47s
-INFO:trainer:Epoch 2/30 | Train/Loss 1.997 Acc 0.482 | Val/Loss 2.453 Acc 37.400 Time 4.26s
